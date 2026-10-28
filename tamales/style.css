@@ -1,0 +1,184 @@
+/* ===== ESTILO DOCUMENTAL: TAMales MEXICANOS ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #171713;
+    color: #e8e0d0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    padding: 0;
+}
+
+/* Encabezados */
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #d8b477;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #766044;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 35px 0 15px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin: 25px 0 10px;
+}
+
+/* Texto */
+
+p {
+    color: #c9c4b8;
+    font-size: 1rem;
+    margin: 15px 0 25px;
+    max-width: 900px;
+}
+
+/* Imágenes documentales */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    filter: sepia(12%) contrast(1.05);
+    transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+img:hover {
+    filter: sepia(0%) contrast(1.1);
+    transform: scale(1.01);
+}
+
+/* Contenido principal */
+
+main, article {
+    width: min(1100px, 90%);
+    margin: 50px auto;
+}
+
+/* Imagen principal */
+
+main > img,
+article > img {
+    width: 100%;
+    max-height: 520px;
+    object-fit: cover;
+    margin: 25px 0;
+    border: 1px solid #66513a;
+}
+
+/* Secciones */
+
+section {
+    padding: 25px 0;
+    margin: 30px 0;
+    border-bottom: 1px solid #39372e;
+}
+
+section img {
+    width: min(450px, 100%);
+    margin: 20px 0;
+}
+
+/* Listas */
+
+ul, ol {
+    padding-left: 30px;
+    color: #c9c4b8;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Enlaces */
+
+a {
+    color: #d8b477;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff0ce;
+    text-decoration: underline;
+}
+
+/* Encabezado del sitio */
+
+header {
+    background: linear-gradient(
+        rgba(15, 15, 12, 0.65),
+        rgba(15, 15, 12, 0.95)
+    );
+    padding: 30px 5%;
+    border-bottom: 2px solid #806441;
+    text-align: center;
+}
+
+header p {
+    margin: 10px auto;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+/* Pie de página */
+
+footer {
+    background-color: #0d0d0b;
+    border-top: 1px solid #806441;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 5px auto;
+    font-size: 0.85rem;
+    color: #9d978a;
+}
+
+/* Adaptación para celulares */
+
+@media (max-width: 600px) {
+    main, article {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    h1 {
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    header {
+        padding: 25px 4%;
+    }
+}
